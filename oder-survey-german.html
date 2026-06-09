@@ -251,16 +251,25 @@
              Present tense framing = current behavior, not immediate reaction. -->
         <div class="question" id="q5d">
             <div class="skip-logic-note">⚠️ FILTERANWEISUNG: Nur zeigen, wenn Q2 ≠ „Gar nicht" UND Q5 ≠ „Nein"</div>
-            <div class="question-text">Q5d. Hat das Fischsterben 2022 verändert, wie Sie die Oder heute nutzen? (Alles Zutreffende ankreuzen)</div>
-            <div class="checkbox-group">
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="visited_less"><label>Ich besuche die Oder seltener</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="avoided_water_contact"><label>Ich meide Kontakt mit dem Wasser (z.&#160;B. Schwimmen, Waten)</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="stopped_fishing"><label>Ich habe das Angeln eingestellt oder reduziert</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="stopped_eating_fish"><label>Ich esse keine Fische mehr aus der Oder</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="more_cautious_general"><label>Ich bin vorsichtiger geworden, besuche die Oder aber weiterhin wie zuvor</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="no_change"><label>Keine Veränderung – ich nutze die Oder genauso wie zuvor</label></div>
-                <div class="checkbox-option"><input type="checkbox" name="behavior_change" value="new_user"><label>Ich habe die Oder erst nach dem Fischsterben 2022 begonnen zu besuchen</label></div>
-            </div>
+            <div class="question-text">Q5d. Hat das Fischsterben 2022 Ihr Verhalten an der Oder verändert?</div>
+            <table class="grid-table">
+                <thead>
+                    <tr>
+                        <th style="width:45%;text-align:left;">Verhalten</th>
+                        <th>Nach dem Fischsterben</th>
+                        <th>Noch heute</th>
+                        <th>Nicht zutreffend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ich habe/besuche die Oder seltener</td><td><input type="radio" name="bc_visited_less" value="1"></td><td><input type="radio" name="bc_visited_less" value="2"></td><td><input type="radio" name="bc_visited_less" value="0"></td></tr>
+                    <tr><td>Ich habe Kontakt mit dem Wasser gemieden / meide ihn (z.&#160;B. Schwimmen, Waten)</td><td><input type="radio" name="bc_water_contact" value="1"></td><td><input type="radio" name="bc_water_contact" value="2"></td><td><input type="radio" name="bc_water_contact" value="0"></td></tr>
+                    <tr><td>Ich habe das Angeln eingestellt oder reduziert</td><td><input type="radio" name="bc_fishing" value="1"></td><td><input type="radio" name="bc_fishing" value="2"></td><td><input type="radio" name="bc_fishing" value="0"></td></tr>
+                    <tr><td>Ich esse keine Fische mehr aus der Oder</td><td><input type="radio" name="bc_eating_fish" value="1"></td><td><input type="radio" name="bc_eating_fish" value="2"></td><td><input type="radio" name="bc_eating_fish" value="0"></td></tr>
+                    <tr><td>Ich bin vorsichtiger geworden, besuche die Oder aber weiterhin</td><td><input type="radio" name="bc_cautious" value="1"></td><td><input type="radio" name="bc_cautious" value="2"></td><td><input type="radio" name="bc_cautious" value="0"></td></tr>
+                    <tr><td>Keine Veränderung – ich nutze die Oder wie zuvor</td><td><input type="radio" name="bc_no_change" value="1"></td><td><input type="radio" name="bc_no_change" value="2"></td><td><input type="radio" name="bc_no_change" value="0"></td></tr>
+                </tbody>
+            </table>
         </div>
 
     </div>
@@ -360,14 +369,27 @@
              Connects to Q4b (political failure framing) and Q6b (trust). -->
         <div class="question" id="Q6a">
             <div class="skip-logic-note">⚠️ FILTERANWEISUNG: Nur anzeigen, wenn Q5 = "Ja" or "Nicht sicher"</div>
-            <div class="question-text">Q7a. Wie zufrieden sind Sie mit der Reaktion der Behörden auf das Fischsterben 2022?</div>
+            <div class="question-text">Q7a. Wie zufrieden waren Sie mit der unmittelbaren Reaktion der Behörden auf das Fischsterben 2022?</div>
             <div class="radio-group">
-                <div class="radio-option"><input type="radio" id="sat1" name="authority_satisfaction" value="1"><label for="sat1">Sehr unzufrieden</label></div>
-                <div class="radio-option"><input type="radio" id="sat2" name="authority_satisfaction" value="2"><label for="sat2">Unzufrieden</label></div>
-                <div class="radio-option"><input type="radio" id="sat3" name="authority_satisfaction" value="3"><label for="sat3">Weder noch</label></div>
-                <div class="radio-option"><input type="radio" id="sat4" name="authority_satisfaction" value="4"><label for="sat4">Zufrieden</label></div>
-                <div class="radio-option"><input type="radio" id="sat5" name="authority_satisfaction" value="5"><label for="sat5">Sehr zufrieden</label></div>
-                <div class="radio-option"><input type="radio" id="sat_dk" name="authority_satisfaction" value="99"><label for="sat_dk">Ich weiß es nicht / War mir der Reaktion nicht bewusst</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="1"><label>Sehr unzufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="2"><label>Unzufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="3"><label>Weder noch</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="4"><label>Zufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="5"><label>Sehr zufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_immediate" value="99"><label>Ich weiß es nicht / War mir der Reaktion nicht bewusst</label></div>
+            </div>
+        </div>
+
+        <div class="question" id="Q7a_b">
+            <div class="skip-logic-note">⚠️ FILTERANWEISUNG: Nur anzeigen, wenn Q5 = „Ja“ oder „Ich bin nicht sicher“</div>
+            <div class="question-text">Q7a_b. Wie zufrieden sind Sie damit, wie die Behörden die laufende Erholung der Oder seit 2022 gehandhabt haben?</div>
+            <div class="radio-group">
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="1"><label>Sehr unzufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="2"><label>Unzufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="3"><label>Weder noch</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="4"><label>Zufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="5"><label>Sehr zufrieden</label></div>
+                <div class="radio-option"><input type="radio" name="authority_sat_ongoing" value="99"><label>Ich weiß es nicht</label></div>
             </div>
         </div>
 
@@ -396,49 +418,67 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Nationale Regierung (in Ihrem Land)</td>
-                        <td><input type="radio" name="trust_gov_national" value="1"></td>
-                        <td><input type="radio" name="trust_gov_national" value="2"></td>
-                        <td><input type="radio" name="trust_gov_national" value="3"></td>
-                        <td><input type="radio" name="trust_gov_national" value="4"></td>
-                        <td><input type="radio" name="trust_gov_national" value="5"></td>
-                        <td class="dk-col"><input type="radio" name="trust_gov_national" value="99"></td>
+                        <td>Deutsche Nationalregierung</td>
+                        <td><input type="radio" name="trust_de_federal" value="1"></td>
+                        <td><input type="radio" name="trust_de_federal" value="2"></td>
+                        <td><input type="radio" name="trust_de_federal" value="3"></td>
+                        <td><input type="radio" name="trust_de_federal" value="4"></td>
+                        <td><input type="radio" name="trust_de_federal" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_de_federal" value="99"></td>
                     </tr>
                     <tr>
-                        <td>Nationale Umwelt- und Wasserbehörden (in Ihrem Land)</td>
-                        <td><input type="radio" name="trust_env_authorities" value="1"></td>
-                        <td><input type="radio" name="trust_env_authorities" value="2"></td>
-                        <td><input type="radio" name="trust_env_authorities" value="3"></td>
-                        <td><input type="radio" name="trust_env_authorities" value="4"></td>
-                        <td><input type="radio" name="trust_env_authorities" value="5"></td>
-                        <td class="dk-col"><input type="radio" name="trust_env_authorities" value="99"></td>
+                        <td>Deutsche Regionalbehörden</td>
+                        <td><input type="radio" name="trust_de_regional" value="1"></td>
+                        <td><input type="radio" name="trust_de_regional" value="2"></td>
+                        <td><input type="radio" name="trust_de_regional" value="3"></td>
+                        <td><input type="radio" name="trust_de_regional" value="4"></td>
+                        <td><input type="radio" name="trust_de_regional" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_de_regional" value="99"></td>
                     </tr>
                     <tr>
-                        <td>Deutsch-polnische Flussmanagementgremien</td>
-                        <td><input type="radio" name="trust_gov_crossborder" value="1"></td>
-                        <td><input type="radio" name="trust_gov_crossborder" value="2"></td>
-                        <td><input type="radio" name="trust_gov_crossborder" value="3"></td>
-                        <td><input type="radio" name="trust_gov_crossborder" value="4"></td>
-                        <td><input type="radio" name="trust_gov_crossborder" value="5"></td>
-                        <td class="dk-col"><input type="radio" name="trust_gov_crossborder" value="99"></td>
+                        <td>Deutsche Umwelt- und Wasserbehörden</td>
+                        <td><input type="radio" name="trust_de_env" value="1"></td>
+                        <td><input type="radio" name="trust_de_env" value="2"></td>
+                        <td><input type="radio" name="trust_de_env" value="3"></td>
+                        <td><input type="radio" name="trust_de_env" value="4"></td>
+                        <td><input type="radio" name="trust_de_env" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_de_env" value="99"></td>
                     </tr>
                     <tr>
-                        <td>Umweltwissenschaftler und Forschende</td>
-                        <td><input type="radio" name="trust_scientists" value="1"></td>
-                        <td><input type="radio" name="trust_scientists" value="2"></td>
-                        <td><input type="radio" name="trust_scientists" value="3"></td>
-                        <td><input type="radio" name="trust_scientists" value="4"></td>
-                        <td><input type="radio" name="trust_scientists" value="5"></td>
-                        <td class="dk-col"><input type="radio" name="trust_scientists" value="99"></td>
+                        <td>Polnische Nationalregierung</td>
+                        <td><input type="radio" name="trust_pl_national" value="1"></td>
+                        <td><input type="radio" name="trust_pl_national" value="2"></td>
+                        <td><input type="radio" name="trust_pl_national" value="3"></td>
+                        <td><input type="radio" name="trust_pl_national" value="4"></td>
+                        <td><input type="radio" name="trust_pl_national" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_pl_national" value="99"></td>
                     </tr>
                     <tr>
-                        <td>Industrie und Unternehmen entlang der Oder</td>
-                        <td><input type="radio" name="trust_industry" value="1"></td>
-                        <td><input type="radio" name="trust_industry" value="2"></td>
-                        <td><input type="radio" name="trust_industry" value="3"></td>
-                        <td><input type="radio" name="trust_industry" value="4"></td>
-                        <td><input type="radio" name="trust_industry" value="5"></td>
-                        <td class="dk-col"><input type="radio" name="trust_industry" value="99"></td>
+                        <td>Polnische Regionalbehörden</td>
+                        <td><input type="radio" name="trust_pl_regional" value="1"></td>
+                        <td><input type="radio" name="trust_pl_regional" value="2"></td>
+                        <td><input type="radio" name="trust_pl_regional" value="3"></td>
+                        <td><input type="radio" name="trust_pl_regional" value="4"></td>
+                        <td><input type="radio" name="trust_pl_regional" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_pl_regional" value="99"></td>
+                    </tr>
+                    <tr>
+                        <td>Polnische Umwelt- und Wasserbehörden</td>
+                        <td><input type="radio" name="trust_pl_env" value="1"></td>
+                        <td><input type="radio" name="trust_pl_env" value="2"></td>
+                        <td><input type="radio" name="trust_pl_env" value="3"></td>
+                        <td><input type="radio" name="trust_pl_env" value="4"></td>
+                        <td><input type="radio" name="trust_pl_env" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_pl_env" value="99"></td>
+                    </tr>
+                    <tr>
+                        <td>Deutsch-polnische Flussmanagementgremien (z. B. IKSO/MKOO)</td>
+                        <td><input type="radio" name="trust_crossborder" value="1"></td>
+                        <td><input type="radio" name="trust_crossborder" value="2"></td>
+                        <td><input type="radio" name="trust_crossborder" value="3"></td>
+                        <td><input type="radio" name="trust_crossborder" value="4"></td>
+                        <td><input type="radio" name="trust_crossborder" value="5"></td>
+                        <td class="dk-col"><input type="radio" name="trust_crossborder" value="99"></td>
                     </tr>
                 </tbody>
             </table>
@@ -461,11 +501,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Vermeidung künftiger Verschmutzungsereignisse</td><td><input type="radio" name="priority1" value="1"></td><td><input type="radio" name="priority1" value="2"></td><td><input type="radio" name="priority1" value="3"></td><td><input type="radio" name="priority1" value="4"></td><td><input type="radio" name="priority1" value="5"></td></tr>
+                                        <tr><td>Verhinderung künftiger ökologischer Katastrophen</td><td><input type="radio" name="priority1" value="1"></td><td><input type="radio" name="priority1" value="2"></td><td><input type="radio" name="priority1" value="3"></td><td><input type="radio" name="priority1" value="4"></td><td><input type="radio" name="priority1" value="5"></td></tr>
                     <tr><td>Wiederherstellung der Fischbestände</td><td><input type="radio" name="priority2" value="1"></td><td><input type="radio" name="priority2" value="2"></td><td><input type="radio" name="priority2" value="3"></td><td><input type="radio" name="priority2" value="4"></td><td><input type="radio" name="priority2" value="5"></td></tr>
                     <tr><td>Verbesserung der Wasserqualität</td><td><input type="radio" name="priority3" value="1"></td><td><input type="radio" name="priority3" value="2"></td><td><input type="radio" name="priority3" value="3"></td><td><input type="radio" name="priority3" value="4"></td><td><input type="radio" name="priority3" value="5"></td></tr>
-                    <tr><td>Schutz natürlicher Lebensräume</td><td><input type="radio" name="priority6" value="1"></td><td><input type="radio" name="priority6" value="2"></td><td><input type="radio" name="priority6" value="3"></td><td><input type="radio" name="priority6" value="4"></td><td><input type="radio" name="priority6" value="5"></td></tr>
-                    <tr><td>Verbesserung der grenzüberschreitenden Zusammenarbeit zwischen Deutschland und Polen</td><td><input type="radio" name="priority8" value="1"></td><td><input type="radio" name="priority8" value="2"></td><td><input type="radio" name="priority8" value="3"></td><td><input type="radio" name="priority8" value="4"></td><td><input type="radio" name="priority8" value="5"></td></tr>
+                    <tr><td>Reduzierung von Salz- und Schadstoffeinträgen in die Oder</td><td><input type="radio" name="priority4" value="1"></td><td><input type="radio" name="priority4" value="2"></td><td><input type="radio" name="priority4" value="3"></td><td><input type="radio" name="priority4" value="4"></td><td><input type="radio" name="priority4" value="5"></td></tr>
+                    <tr><td>Wiederherstellung von Uferhabitaten und Auen</td><td><input type="radio" name="priority5" value="1"></td><td><input type="radio" name="priority5" value="2"></td><td><input type="radio" name="priority5" value="3"></td><td><input type="radio" name="priority5" value="4"></td><td><input type="radio" name="priority5" value="5"></td></tr>
+                    <tr><td>Verbesserung der grenzüberschreitenden Bewirtschaftung der Oder</td><td><input type="radio" name="priority6" value="1"></td><td><input type="radio" name="priority6" value="2"></td><td><input type="radio" name="priority6" value="3"></td><td><input type="radio" name="priority6" value="4"></td><td><input type="radio" name="priority6" value="5"></td></tr>
                 </tbody>
             </table>
         </div>
@@ -826,6 +867,10 @@
                 <div class="checkbox-option"><input type="checkbox" name="org_membership" value="environmental"><label>Einer Umwelt- oder Naturschutzorganisation</label></div>
                 <div class="checkbox-option"><input type="checkbox" name="org_membership" value="none"><label>Keines der oben genannten</label></div>
             </div>
+        </div>
+        <div class="question">
+            <div class="question-text">Q21. Wie lautet Ihre Postleitzahl?</div>
+            <input type="text" name="postcode" maxlength="5" placeholder="z.B. 15230" style="width:150px; padding:8px; border:1px solid #ccc; border-radius:4px; font-size:16px;">
         </div>
     </div>
 
